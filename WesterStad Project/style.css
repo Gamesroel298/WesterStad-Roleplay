@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: hsl(0, 0%, 21%);
+    color: white;
+    padding: 10px 20px; /* Wat padding rondom */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Zorgt ervoor dat de logo en nav-links aan de zijkanten zitten */
+    align-items: center; /* Centreert de items verticaal */
+}
+
+.logo img {
+    height: 50px; /* Pas de hoogte van het logo aan zoals nodig */
+}
+
+.nav-links ul {
+    list-style-type: none; /* Verwijder standaard opsommingstekens */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Gebruik flexbox om knoppen horizontaal weer te geven */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Voeg ruimte tussen de knoppen toe */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /* Verwijder onderstreping */
+    font-weight: bold; /* Maak de tekst vetgedrukt */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Voeg onderstreping toe bij hover */
+}
+
+.video-container {
+    width: 100%;
+    padding-top: 56.25%; /* Dit creëert een 16:9 aspect ratio */
+    position: relative;
+    overflow: hidden; /* Zorg ervoor dat niets uit de container valt */
+}
+
+.video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Verwijder de rand */
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: hsl(0, 0%, 47%);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
